@@ -1,0 +1,14 @@
+.procedures-section {
+  &__box {
+    align-items: center;
+    padding-right: 112px;
+    padding-left: 112px;
+    display: flex;
+    gap: 32px;
+  }
+
+  &__container {
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+}

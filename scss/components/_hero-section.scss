@@ -1,0 +1,30 @@
+.hero-section {
+  padding-top: 106px;
+  padding-bottom: 126px;
+  background-image: url(../images/1section-background.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  &__box {
+    padding-top: 16px;
+    padding-left: 206px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  &__title {
+    font-size: 140px;
+    line-height: 0.9;
+    color: var(--title-blue);
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  &__info {
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 0 8px;
+  }
+}

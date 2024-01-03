@@ -1,0 +1,30 @@
+.card {
+  &__masks {
+    border-radius: 4px 120px 4px 120px;
+    background-image: url(../images/grad.png), url(../images/card-1.jpg);
+    border: 1px solid #9747ff;
+    height: 456px;
+  }
+  &__injections {
+    background-image: url(../images/grad.png), url(../images/card-2.jpg);
+    border-radius: 4px 120px 4px 120px;
+    border: 1px solid #9747ff;
+    height: 456px;
+  }
+  &__cleaning {
+    background-image: url(../images/grad.png), url(../images/card-3.jpg);
+    border-radius: 4px 120px 4px 120px;
+    border: 1px solid #9747ff;
+    height: 456px;
+  }
+  &__title {
+    color: var(--light-backgraund);
+    text-align: center;
+    padding-left: 115px;
+    padding-right: 77px;
+    padding-top: 372px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}

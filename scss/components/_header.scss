@@ -1,41 +1,39 @@
 .header {
+  backdrop-filter: blur(6px);
+  position: absolute;
+  width: 100%;
+  top: 32px;
   &__container {
+    padding-right: 100px;
+    font-size: 18px;
+    line-height: 1.1;
     align-items: center;
-    padding: 32px 0;
     display: flex;
     gap: 240px;
-    justify-content: space-around;
   }
   &__list {
     flex-basis: 100%;
     display: flex;
-    align-items: center;
     gap: 56px;
     justify-content: space-between;
   }
   &__nav {
     align-items: center;
-    flex-grow: 1;
+    padding-left: 100px;
     display: flex;
-    justify-content: space-between;
+
     gap: 240px;
   }
   &__icon {
     display: flex;
     justify-content: space-between;
-    padding-right: 100px;
-    flex-basis: 160px;
+    gap: 24px;
   }
   &__iteam {
     text-decoration: none;
+    color: var(--text-main);
   }
   &__logo {
-    max-width: 100%;
-    width: 74px;
-    height: 42px;
-    padding-top: 8px;
-    padding-left: 100px;
-    padding-right: 0;
     font-family: "Play", sans-serif;
     font-weight: 700;
     font-size: 22px;
