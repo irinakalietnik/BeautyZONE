@@ -1,0 +1,39 @@
+.footer {
+  position: relative;
+  background-image: url(../images/footer-waves.svg);
+  background-color: var(--text-main);
+  &__container {
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 186px;
+  }
+  &__nav {
+    justify-content: space-around;
+    display: flex;
+    flex-basis: 50%;
+  }
+  &__adress {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+  &__logo {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 0.9;
+    color: var(--title-blue);
+    width: 83px;
+    height: 42px;
+  }
+  &__copy {
+    font-size: 13px;
+    color: var(--dark-grey);
+  }
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

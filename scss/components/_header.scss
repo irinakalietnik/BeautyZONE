@@ -22,11 +22,7 @@
     display: flex;
     gap: 240px;
   }
-  &__icon {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
+
   &__iteam {
     text-decoration: none;
     color: var(--text-main);

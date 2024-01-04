@@ -1,0 +1,25 @@
+.contacts-section {
+  &__container {
+    padding: 0 96px;
+    display: flex;
+    gap: 32px;
+  }
+  &__box {
+    padding: 48px 56px;
+    flex-grow: 1;
+  }
+  &__text {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 16px;
+  }
+  &__map {
+    border: none;
+    flex-basis: 100%;
+    border-radius: 32px;
+    width: 600px;
+    height: 480px;
+  }
+}

@@ -1,0 +1,8 @@
+.icon {
+  display: flex;
+  gap: 24px;
+  fill: var(--text-main);
+  &--lighted {
+    fill: var(--light-backgraund);
+  }
+}

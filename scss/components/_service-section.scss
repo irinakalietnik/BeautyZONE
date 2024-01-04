@@ -1,13 +1,13 @@
 .service-section {
   &__container {
     display: flex;
-    gap: 24px;
+    gap: 32px;
     flex-direction: row;
   }
   &__box {
     padding-top: 40px;
     width: 100%;
-    gap: 32px;
+    padding-right: 40px;
   }
   &__images {
     position: relative;
