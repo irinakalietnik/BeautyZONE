@@ -1,14 +1,24 @@
 .main-button {
-  padding: 16px 32px;
-  border-radius: 32px;
-  background-color: var(--title-blue);
-  color: var(--light-backgraund);
-  font-size: 18px;
-  line-height: 1.1;
-  font-weight: 600;
-  border: none;
-  margin-bottom: 10px;
+  text-align: center;
+  &__btn {
+    padding: 16px 32px;
+    border-radius: 32px;
+    background-color: var(--title-blue);
+    color: var(--light-backgraund);
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 14px;
+  }
+  &__info {
+    color: var(--dark-grey);
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 0 40px;
+  }
 }
+
 /*prosedures button*/
 .btn-procedures {
   justify-content: center;

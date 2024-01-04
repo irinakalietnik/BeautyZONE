@@ -5,15 +5,20 @@
     gap: 32px;
   }
   &__box {
+    background-image: url(../images/form-decor.svg);
+
+    border-radius: 32px;
+    background-color: var(--text-main);
     padding: 48px 56px;
     flex-grow: 1;
   }
   &__text {
+    color: var(--light-backgraund);
     text-align: center;
     font-size: 22px;
     line-height: 1.2;
     font-weight: 600;
-    margin: 0 16px;
+    margin: 0 32px 32px;
   }
   &__map {
     border: none;

@@ -9,14 +9,14 @@
     gap: 186px;
   }
   &__nav {
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 40%;
   }
   &__adress {
     display: flex;
     justify-content: space-between;
-    flex-basis: 50%;
+    flex-basis: 60%;
   }
   &__logo {
     font-family: "Play", sans-serif;
