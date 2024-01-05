@@ -1,6 +1,9 @@
 .form-main {
   &__fild {
     padding-bottom: 16px;
+    &--enlarged {
+      padding-bottom: 24px;
+    }
   }
   &__label {
     display: block;

@@ -1,0 +1,48 @@
+.modal {
+  flex-direction: column;
+  position: relative;
+  max-width: 723px;
+  width: 100%;
+  max-height: 681px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/modal-decor.svg);
+  background-color: var(--text-main);
+  border-radius: 48px;
+
+  &__title {
+    color: var(--light-backgraund);
+    font-size: 64px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  &__container {
+    padding: 0 206px;
+    flex-basis: 100%;
+  }
+  &__text {
+    color: var(--light-backgraund);
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 32px 32px;
+  }
+  &__button {
+    border: none;
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    stroke: var(--light-backgraund);
+    background-color: var(--text-main);
+    fill: var(--text-main);
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}

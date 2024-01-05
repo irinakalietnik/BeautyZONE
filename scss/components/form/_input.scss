@@ -4,13 +4,16 @@
   border: 1.5px solid var(--dark-grey);
   padding: 16px 24px;
   width: 310px;
-  font-size: 13px;
+  font-size: 16px;
+  color: var(--light-backgraund);
+
   &:focus {
     background-color: var(--dark-grey);
     border-color: 1.5px solid var(--dark-grey);
     color: var(--light-backgraund);
     outline: none;
     &::placeholder {
+      font-size: 13px;
       color: var(--light-backgraund);
     }
   }

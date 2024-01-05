@@ -60,7 +60,7 @@
               Zone
             </h1>
             <div>
-              <button class="main-button__btn" type="button">
+              <button class="main-button__btn modal-btn-open" type="button">
                 Записатись безкоштовно
               </button>
               <p class="main-button__info">
@@ -378,7 +378,71 @@
         />
       </div>
     </footer>
+    <div class="backdrop backdrop--is-hidden">
+      <div class="modal">
+        <button class="modal__button modal-btn-close" type="button">
+          <svg width="16" height="16">
+            <use href="./images/icon.svg#icon-clouse"></use>
+          </svg>
+        </button>
+        <div class="modal__container">
+          <h4 class="modal__title">Замовити дзвінок</h4>
+          <p class="modal__text">
+            Запишіться <span class="accent"> безкоштовно</span> та отримайте
+            подарунок
+          </p>
+          <form name="form-main" autocomplete="on">
+            <div class="form-main__fild form-main__fild--enlarged">
+              <label class="form-main__label" for="user-name"></label>
+              <input
+                class="input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                placeholder="Ваше ім'я та прізвище"
+                required
+                minlength="2"
+                maxlength="20"
+              />
+            </div>
+            <div class="form-main__fild form-main__fild--enlarged">
+              <label class="form-main__label" for="user-tel"></label>
+              <input
+                class="input"
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+                placeholder="Ваш номер телефону"
+                required
+                pattern="^\+[0-9]{12}"
+              />
+            </div>
+            <div class="form-main__fild form-main__fild--enlarged">
+              <label class="form-main__label" for="email"></label>
+              <input
+                class="input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                placeholder="Ваша електронна пошта"
+                required
+              />
+            </div>
+          </form>
+          <div class="main-button">
+            <button class="main-button__btn" type="button">
+              Записатись безкоштовно
+            </button>
+            <p class="main-button__info">
+              Запишись та отримай безкоштовну <br />
+              консультацію нашого косметолога
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/procedures-slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
