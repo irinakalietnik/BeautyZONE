@@ -270,7 +270,7 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Ваш номер телефону"
-                    required=""
+                    required
                     pattern="^\+[0-9]{12}"
                   />
                 </div>
@@ -282,19 +282,19 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Ваша електронна пошта"
-                    required=""
+                    required
                   />
                 </div>
+                <div class="main-button">
+                  <button class="main-button__btn" type="submit">
+                    Записатись безкоштовно
+                  </button>
+                  <p class="main-button__info">
+                    Запишись та отримай безкоштовну <br />
+                    консультацію нашого косметолога
+                  </p>
+                </div>
               </form>
-              <div class="main-button">
-                <button class="main-button__btn" type="submit">
-                  Записатись безкоштовно
-                </button>
-                <p class="main-button__info">
-                  Запишись та отримай безкоштовну <br />
-                  консультацію нашого косметолога
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -393,7 +393,9 @@
           </p>
           <form name="form-main" autocomplete="on">
             <div class="form-main__fild form-main__fild--enlarged">
-              <label class="form-main__label" for="user-name">23</label>
+              <label class="form-main__label visual-hidden" for="user-name"
+                >23</label
+              >
               <input
                 class="input"
                 type="text"
@@ -428,16 +430,17 @@
                 required
               />
             </div>
+
+            <div class="main-button">
+              <button class="main-button__btn" type="submit">
+                Записатись безкоштовно
+              </button>
+              <p class="main-button__info">
+                Запишись та отримай безкоштовну <br />
+                консультацію нашого косметолога
+              </p>
+            </div>
           </form>
-          <div class="main-button">
-            <button class="main-button__btn" type="submit">
-              Записатись безкоштовно
-            </button>
-            <p class="main-button__info">
-              Запишись та отримай безкоштовну <br />
-              консультацію нашого косметолога
-            </p>
-          </div>
         </div>
       </div>
     </div>
