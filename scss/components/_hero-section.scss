@@ -1,16 +1,14 @@
 .hero-section {
   padding-top: 126px;
   padding-bottom: 126px;
-  background-image: url(../images/1section-background.jpg);
+  background-image: url(../images/grad1-section.png),
+    url(../images/1section-background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
   @media screen and (max-width: $bp-desktop) {
     padding-top: 72px;
     padding-bottom: 16px;
-    background-position: 45% 22%;
-  }
-  @media screen and (max-width: $bp-tablet) {
+    background-size: cover;
     background-position: center;
   }
   &__box {

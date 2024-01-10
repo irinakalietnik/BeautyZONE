@@ -6,8 +6,11 @@
   flex-basis: 100%;
   font-size: 13px;
   color: var(--light-backgraund);
+  &::placeholder {
+    color: var(--light-backgraund);
+  }
   @media screen and (max-width: $bp-tablet) {
-   flex-basis: 100%;
+    flex-basis: 100%;
   }
 
   &:focus {
