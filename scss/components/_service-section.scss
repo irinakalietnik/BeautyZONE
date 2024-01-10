@@ -1,5 +1,6 @@
 .service-section {
   &__container {
+    position: relative;
     display: flex;
     gap: 32px;
     flex-direction: row;
@@ -14,6 +15,29 @@
     flex-basis: 100%;
     height: 695px;
     max-width: 499px;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
+  }
+  &__star3 {
+    position: absolute;
+    right: 8px;
+    top: 260px;
+  }
+  &__star2 {
+    position: absolute;
+    right: -16px;
+    top: 48px;
+  }
+  &__star1 {
+    position: absolute;
+    right: 316px;
+    bottom: 296px;
+    @media screen and (max-width: $bp-desktop) {
+      position: absolute;
+      right: 48px;
+      bottom: 0;
+    }
   }
 
   &__foto1 {
@@ -29,10 +53,20 @@
     font-size: 64px;
     text-align: left;
     margin-bottom: 40px;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 32px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      line-height: 1.2;
+    }
   }
   &__text {
     font-size: 22px;
     margin-bottom: 40px;
     line-height: 1.5;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.2;
+    }
   }
 }

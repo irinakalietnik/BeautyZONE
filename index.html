@@ -15,12 +15,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <div class="header__logo">Beauty Zone</div>
+            <div class="header__logo">Beauty <br />Zone</div>
             <ul class="header__list">
               <li class="header__iteam">
                 <a class="link" href="#service-section">Про нас</a>
@@ -36,6 +37,11 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger-menu" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icon.svg#icon-menu"></use>
+            </svg>
+          </button>
           <div class="icon">
             <svg width="32" height="32">
               <use href="./images/icon.svg#icon-telephon"></use>
@@ -55,13 +61,18 @@
         <div class="container">
           <div class="hero-section__box">
             <p class="hero-section__text">Косметологічна клініка</p>
-            <h1 class="hero-section__title">
-              Beauty <br />
-              Zone
-            </h1>
+            <!--prettier-ignore-->
+            <h1 class="hero-section__title">Beauty
+              Zone</h1>
             <div>
               <button class="main-button__btn modal-btn-open" type="button">
                 Записатись безкоштовно
+              </button>
+              <button
+                class="main-button__mobil-btn modal-btn-open"
+                type="button"
+              >
+                Замовити дзвінок
               </button>
               <p class="main-button__info">
                 Запишись та отримай безкоштовну <br />
@@ -77,7 +88,7 @@
             <div class="service-section__box">
               <h2 class="service-section__title">
                 Перевтілюйтесь<br />
-                в <span class="accent"> Beauty Zone!</span>
+                в <span class="accent"> <strong>Beauty Zone!</strong></span>
               </h2>
               <p class="service-section__text">
                 Наша косметологічна клініка пропонує вам професійні послуги з
@@ -90,6 +101,11 @@
                 <br />З нами краса назавжди!
               </p>
             </div>
+            <img
+              class="service-section__star1"
+              src="./images/star1.jpg"
+              alt="star"
+            />
             <div class="service-section__images">
               <img
                 class="service-section__foto1"
@@ -100,6 +116,17 @@
                 class="service-section__foto2"
                 src="./images/service-foto2.jpg"
                 alt="Appearance of woman after procedures"
+              />
+
+              <img
+                class="service-section__star2"
+                src="./images/star2.jpg"
+                alt="star"
+              />
+              <img
+                class="service-section__star3"
+                src="./images/star3.jpg"
+                alt="star"
               />
             </div>
           </div>
@@ -118,8 +145,8 @@
                     <use href="./images/icon.svg#icon-star"></use>
                   </svg>
                   <p class="advantages-section__text">
-                    Всі наші косметологи мають вищу медичну освіту та стаж
-                    роботи від 5 років
+                    Всі наші косметологи мають вищу медичну освіту <br />
+                    та стаж роботи від 5 років
                   </p>
                 </div>
               </li>
@@ -154,7 +181,7 @@
           </div>
         </div>
       </section>
-      <section class="section" id="procedures-section">
+      <section class="section procedures-section" id="procedures-section">
         <div class="container">
           <h2>Наші <span class="accent">процедури</span></h2>
           <div class="procedures-section__box">
@@ -230,19 +257,20 @@
           </div>
         </div>
       </section>
-      <section class="section" id="contacts-section">
+      <section class="section contacts-section" id="contacts-section">
         <div class="container">
           <h2>Як нас <span class="accent"> знайти</span></h2>
           <div class="contacts-section__container">
-            <iframe
-              class="contacts-section__map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.901363069235!2d30.518120099999997!3d50.4429379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a358548f%3A0x3ebc1d062d601ba0!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1704299596541!5m2!1sru!2sua"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-
+            <div class="contacts-section__map-mobile">
+              <iframe
+                class="contacts-section__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.901363069235!2d30.518120099999997!3d50.4429379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8a358548f%3A0x3ebc1d062d601ba0!2z0LHRg9C7LiDQotCw0YDQsNGB0LAg0KjQtdCy0YfQtdC90LrQviwgNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1704299596541!5m2!1sru!2sua"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
             <div class="contacts-section__box">
               <p class="contacts-section__text">
                 Запишіться <span class="accent"> безкоштовно</span> та отримайте
@@ -289,6 +317,9 @@
                   <button class="main-button__btn" type="submit">
                     Записатись безкоштовно
                   </button>
+                  <button class="main-button__mobil-btn" type="submit">
+                    Записатись безкоштовно
+                  </button>
                   <p class="main-button__info">
                     Запишись та отримай безкоштовну <br />
                     консультацію нашого косметолога
@@ -300,6 +331,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
@@ -346,29 +378,27 @@
                 <a
                   class="link link--redused"
                   href="https://maps.app.goo.gl/JSTL1VfgoKMn8QcM8"
-                  >Україна, м. Київ, вул.Тараса Шевченка, 6</a
+                  >Україна, м. Київ, <br />вул.Тараса Шевченка 5</a
                 >
               </li>
-              <li class="footer__iteam">
-                <div class="icon icon--lighted">
-                  <svg width="42" height="42">
-                    <use href="./images/icon.svg#icon-telephon"></use>
-                  </svg>
-                  <svg width="42" height="42">
-                    <use href="./images/icon.svg#icon-facebook"></use>
-                  </svg>
-                  <svg width="42" height="42">
-                    <use href="./images/icon.svg#icon-instagram"></use>
-                  </svg>
-                </div>
-              </li>
             </ul>
-            <div class="footer__info">
-              <a class="link link--redused" href="#"
-                >Політика конфіденційності</a
-              >
-              <p class="footer__copy">&copy; 2022 Дані захищені</p>
+            <div class="footer__icon">
+              <div class="icon icon--lighted">
+                <svg width="42" height="42">
+                  <use href="./images/icon.svg#icon-telephon"></use>
+                </svg>
+                <svg width="42" height="42">
+                  <use href="./images/icon.svg#icon-facebook"></use>
+                </svg>
+                <svg width="42" height="42">
+                  <use href="./images/icon.svg#icon-instagram"></use>
+                </svg>
+              </div>
             </div>
+          </div>
+          <div class="footer__info">
+            <a class="link link--redused" href="#">Політика конфіденційності</a>
+            <p class="footer__copy">&copy; 2022 Дані захищені</p>
           </div>
         </div>
         <img

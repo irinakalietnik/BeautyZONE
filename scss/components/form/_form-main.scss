@@ -1,5 +1,6 @@
 .form-main {
   &__fild {
+    display: flex;
     padding-bottom: 16px;
     &--enlarged {
       padding-bottom: 24px;

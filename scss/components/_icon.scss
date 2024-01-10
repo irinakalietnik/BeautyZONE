@@ -1,8 +1,16 @@
 .icon {
   display: flex;
-  gap: 24px;
+  gap: 32px;
   fill: var(--text-main);
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+
   &--lighted {
     fill: var(--light-backgraund);
+    @media screen and (max-width: $bp-desktop) {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

@@ -1,5 +1,20 @@
 .main-button {
   text-align: center;
+  &__mobil-btn {
+    display: none;
+    @media screen and (max-width: $bp-tablet) {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 16px 24px;
+      border-radius: 24px;
+      background-color: var(--title-blue);
+      color: var(--light-backgraund);
+      font-size: 16px;
+      line-height: 1.1;
+      font-weight: 600;
+      border: none;
+    }
+  }
   &__btn {
     padding: 16px 32px;
     border-radius: 32px;
@@ -10,6 +25,9 @@
     font-weight: 600;
     border: none;
     margin-bottom: 14px;
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
 
     &:hover {
       background-color: transparent;
@@ -17,6 +35,7 @@
       border: 2px solid var(--title-blue);
     }
   }
+
   &__info {
     color: var(--dark-grey);
     font-size: 12px;
@@ -24,7 +43,6 @@
     padding: 0 40px;
   }
 }
-
 /*prosedures button*/
 .btn-procedures {
   justify-content: center;
@@ -37,6 +55,10 @@
   align-items: center;
   flex-shrink: 0;
   border: 2px solid var(--text-main);
+  @media screen and (max-width: $bp-tablet) {
+    display: none;
+  }
+
   &__left {
     transform: rotate(180deg);
   }

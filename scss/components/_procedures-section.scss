@@ -1,4 +1,7 @@
 .procedures-section {
+  @media screen and (max-width: $bp-tablet) {
+    padding-top: 40px;
+  }
   &__box {
     align-items: center;
     padding-right: 16px;

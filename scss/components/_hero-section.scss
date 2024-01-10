@@ -5,15 +5,27 @@
 
   background-repeat: no-repeat;
   background-position: center top;
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-position: center;
+  }
   &__box {
     padding-top: 16px;
     padding-left: 106px;
+    @media screen and (max-width: $bp-desktop) {
+      text-align: center;
+      padding: 0;
+    }
   }
   &__text {
     font-size: 18px;
     line-height: 1.1;
     font-weight: 400;
     margin-bottom: 16px;
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 0;
+    }
   }
   &__title {
     font-size: 140px;
@@ -21,6 +33,12 @@
     color: var(--title-blue);
     font-weight: 700;
     margin-bottom: 40px;
+    white-space: pre-line;
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 54px;
+      margin-bottom: 32px;
+      white-space: normal;
+    }
   }
   &__info {
     font-size: 12px;

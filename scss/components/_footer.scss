@@ -2,21 +2,57 @@
   position: relative;
   background-image: url(../images/footer-waves.svg);
   background-color: var(--text-main);
+  @media screen and (max-width: $bp-tablet) {
+    align-items: center;
+    text-align: center;
+  }
   &__container {
     padding: 56px 0;
     display: flex;
     justify-content: space-between;
-    gap: 232px;
+    gap: 200px;
+    @media screen and (max-width: $bp-desktop) {
+      gap: 48px;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      padding: 32px 0 60px;
+      gap: 0px;
+    }
   }
   &__nav {
     justify-content: space-between;
     display: flex;
-    flex-basis: 40%;
+    flex-basis: 50%;
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: space-around;
+    }
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__adress {
     display: flex;
-    justify-content: space-between;
-    flex-basis: 60%;
+    flex-direction: column;
+    flex-basis: 25%;
+    align-items: flex-start;
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__info {
+    flex-basis: 25%;
+    @media screen and (max-width: $bp-tablet) {
+      padding-top: 8px;
+    }
+  }
+
+  &__iteam {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
   }
   &__logo {
     font-family: "Play", sans-serif;
@@ -26,6 +62,9 @@
     color: var(--title-blue);
     width: 83px;
     height: 42px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 42px;
+    }
   }
   &__copy {
     font-size: 13px;
@@ -35,5 +74,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    @media screen and (max-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

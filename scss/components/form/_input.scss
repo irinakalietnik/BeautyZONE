@@ -3,9 +3,12 @@
   border-radius: 32px;
   border: 1.5px solid var(--dark-grey);
   padding: 16px 24px;
-  width: 310px;
+  flex-basis: 100%;
   font-size: 13px;
   color: var(--light-backgraund);
+  @media screen and (max-width: $bp-tablet) {
+   flex-basis: 100%;
+  }
 
   &:focus {
     background-color: var(--dark-grey);
