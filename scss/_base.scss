@@ -52,11 +52,16 @@ body {
   background-image: url(../images/background2.png);
   background-repeat: no-repeat;
   background-position: 50% 61%;
-
   font-weight: 400;
   margin: 0;
   font-family: "Roboto", sans-serif;
   color: var(--text-main);
+  @media screen and (max-width: $bp-desktop) {
+    background-position: 50% 61%;
+  }
+  @media screen and (max-width: $bp-tablet) {
+    background-position: 39% 36%;
+  }
 }
 .link {
   line-height: 1.2;

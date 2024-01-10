@@ -35,8 +35,10 @@
     bottom: 296px;
     @media screen and (max-width: $bp-desktop) {
       position: absolute;
-      right: 48px;
+      right: 0;
       bottom: 0;
+      width: 40px;
+      height: 40px;
     }
   }
 
