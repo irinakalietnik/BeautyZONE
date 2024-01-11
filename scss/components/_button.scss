@@ -10,6 +10,9 @@
     font-weight: 600;
     border: none;
     margin-bottom: 14px;
+    @media screen and (max-width: $bp-desktop) {
+      padding: 16px 24px;
+    }
   }
   &:hover {
     background-color: transparent;

@@ -9,7 +9,7 @@
     display: flex;
     gap: 32px;
     @media screen and (max-width: $bp-tablet) {
-      gap: 8px;
+      gap: 0;
     }
   }
 

@@ -20,15 +20,15 @@
     text-align: center;
     margin: 40px 0;
     @media screen and (max-width: $bp-desktop) {
-      font-size: 48px;
-      margin: 32px 0;
+      font-size: 32px;
+      margin: 48px 0 32px;
     }
   }
   &__container {
-    padding: 0 206px;
+    padding: 0 180px;
     flex-basis: 100%;
     @media screen and (max-width: $bp-desktop) {
-      padding: 48px;
+      padding: 24px;
     }
   }
   &__text {
