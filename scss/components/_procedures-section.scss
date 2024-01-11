@@ -8,6 +8,9 @@
     padding-left: 16px;
     display: flex;
     gap: 32px;
+    @media screen and (max-width: $bp-tablet) {
+      gap: 8px;
+    }
   }
 
   &__container {
